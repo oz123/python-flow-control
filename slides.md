@@ -545,7 +545,7 @@ generator.close()
 
 
 ---
-# Concurrecty with Futures
+# Concurrecy with Futures
 
 > To handle network I/O efficiently, you need concurrency, as it involves high latency,
 > so instead of wasting CPU cycles waiting, it’s better to do something else until a
