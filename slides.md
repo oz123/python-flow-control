@@ -326,26 +326,6 @@ class Range:
 Question:
  - can you spot a difference between `Range` and `range_gen`?
 
----
-# exercise - merge CSVs and implement a qeuery interface
-
-Build an interface for a CSV file which accepts a city name,
-and returns the row.
-This should be similar to this:
-
-```
-@coroutine
-def get_key(data):
-    val = None
-    while True:
-      get_val = yield
-      yield data[get_val]
-
-g = get_key({'a':1, 'b':2})
-g.send('a')
-1
-```
- #### There is no need to read the whole file in memory
 
 ---
 class: middle, inverse-sec
@@ -538,12 +518,29 @@ generator.close()
 ---
 # Exercise
 
- Handling a custome execption in a genrator
+ Handling a custom execption in a generator
 
  Python docs
  https://bit.ly/2Iqlv8R
+---
+# Exercise - merge CSVs and implement a qeuery interface
 
+Build an interface for a CSV file which accepts a city name,
+and returns the row.
+This should be similar to this:
 
+```
+def get_key(data):
+    val = None
+    while True:
+      get_val = yield
+      yield data[get_val]
+
+g = get_key({'a':1, 'b':2})
+g.send('a')
+1
+```
+ #### There is no need to read the whole file in memory
 ---
 # Concurrecy with Futures
 
