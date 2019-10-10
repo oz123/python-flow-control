@@ -1,7 +1,7 @@
 class: center, middle, inverse
 # Advanced Python Flow control
-## ML Conf, Berlin
-### Oz Tiram, 1 October 2018
+## Python Summit, Berlin
+### Oz Tiram, 14 October 2019
 ---
 class: inverse, biglist
 layout: true
