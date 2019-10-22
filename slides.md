@@ -2,6 +2,7 @@ class: center, middle, inverse
 # Advanced Python Flow control
 ## Python Summit, Berlin
 ### Oz Tiram, 14 October 2019
+#### github.com/oz123
 ---
 class: inverse, biglist
 layout: true
